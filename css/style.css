@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+
+  --ff-kumbh: "Kumbh Sans", sans-serif;
+}
+
+/* GLOBAL */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 1.125rem;
+}
+
+body {
+  font-family: var(--ff-kumbh);
+  background-color: var(--dark-cyan);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+h1,
+h2 {
+  font-size: inherit;
+  color: var(--very-dark-desaturated-blue);
+}
+
+p {
+  color: var(--dark-gray);
+}
+
+/* BACKGROUND */
+.pattern-top {
+  background: url(../images/bg-pattern-top.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 978px;
+  width: 978px;
+  position: absolute;
+  top: -500px;
+  left: -750px;
+}
+
+.pattern-bottom {
+  background: url(../images/bg-pattern-bottom.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 978px;
+  width: 978px;
+  position: absolute;
+  right: -770px;
+  bottom: -400px;
+}
+
+/* CARD */
+.card {
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.profile {
+  padding: 0.3rem;
+  background: white;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 22%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile img {
+  display: block;
+  border-radius: 50%;
+}
+
+/* TEXT ON CARD */
+.container-name {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-name h1 {
+  margin-right: 0.5rem;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location p {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.8rem;
+}
+
+/* STATS */
+.container-stats {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+  border-top: lightgray 1px solid;
+  line-height: 1.6;
+}
+
+.container-stats p {
+  font-size: 0.6rem;
+  letter-spacing: 0.1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+  .pattern-top {
+    top: -500px;
+    left: -550px;
+  }
+
+  .pattern-bottom {
+    right: -570px;
+    bottom: -400px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pattern-top {
+    top: -350px;
+    left: -200px;
+  }
+
+  .pattern-bottom {
+    right: -250px;
+    bottom: -400px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .pattern-top {
+    top: -350px;
+    left: 400px;
+  }
+
+  .pattern-bottom {
+    right: 350px;
+    bottom: -400px;
+  }
+}
